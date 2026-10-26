@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173a5a">
+  <meta name="description" content="E-portofolio Semester 2 Adri Faisal, PPG Calon Guru bidang Informatika. Dokumentasi praktik mengajar, artefak, analisis, dan refleksi." />
+  <title>E-Portofolio Semester 2 | Adri Faisal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modern.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Lewati ke konten</a>
+  <header class="topbar" id="top">
+    <div class="container nav-wrap">
+      <a class="brand brand--image" href="#beranda" aria-label="E-Portofolio Adri Faisal, kembali ke beranda">
+        <img class="brand-logo-img" src="assets/logo.png" alt="E-Portofolio PPG Prajabatan 2026, Semester 2, Adri Faisal" width="175" height="79">
+      </a>
+      <div class="nav-current" aria-live="polite" aria-label="Bagian yang sedang ditampilkan">
+        <span class="nav-current-label">SEDANG DILIHAT</span>
+        <strong id="navCurrentName">Beranda</strong>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ <span>Menu</span></button>
+      <nav id="mainNav" class="nav-links" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#lk3">LK3</a>
+        <a href="#uts">UTS</a>
+        <a href="#uas">UAS</a>
+        <a href="#media">Media</a>
+        <a href="#nonmengajar">Nonmengajar</a>
+        <a href="#asesmen">Asesmen</a>
+        <a href="#refleksi">Refleksi</a>
+        <a href="#dokumen">Dokumen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- BERANDA: edit content/beranda.js -->
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot"></span><span id="heroLabel">E-PORTOFOLIO · SEMESTER 2</span></div>
+          <h1 id="heroTitle">Belajar mengajar,<br><span>bertumbuh melalui refleksi.</span></h1>
+          <p class="hero-lead" id="heroSubtitle">Dokumentasi praktik pembelajaran mandiri, artefak, media, asesmen, dan refleksi sebagai calon guru Informatika.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#lk3">Jelajahi portofolio <span aria-hidden="true">↘</span></a>
+            <a class="btn btn-outline" href="#profil">Kenali saya</a>
+          </div>
+        </div>
+        <aside class="hero-side" aria-label="Ringkasan portofolio">
+          <div class="hero-side-top"><span class="mini-label">PRAKTIK PENGALAMAN LAPANGAN</span><span class="hero-spark" aria-hidden="true">✳</span></div>
+          <div class="hero-side-title">Dari rancangan<br>menuju <em>praktik.</em></div>
+          <p>Merancang pembelajaran, mencoba strategi, mengamati proses, lalu memperbaikinya berdasarkan bukti dan refleksi.</p>
+          <div class="hero-side-bottom"><span>Rancang</span><span>Praktik</span><span>Refleksi</span></div>
+          <div id="heroContactLine" class="home-contact-line"></div>
+        </aside>
+      </div>
+      <div class="container hero-stats" id="heroStats" aria-label="Ringkasan portofolio"></div>
+      <div class="container hero-note" id="heroNote" hidden></div>
+    </section>
+
+    <!-- PROFIL: foto diganti melalui assets/profile/ dan content/profil.js -->
+    <section id="profil" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">01 · PROFIL MAHASISWA</div><h2>Mengenal perjalanan saya</h2></div><p>Profil, konteks praktik, dan kompetensi yang terus dikembangkan.</p></div>
+        <div id="profileGrid" class="profile-grid"></div>
+      </div>
+    </section>
+
+    <!-- LK3: kartu dapat diklik untuk membuka detail dan analisis -->
+    <section id="lk3" class="section section-tint">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">02 · LK3 / E-PORTOFOLIO 1</div><h2>Analisis produk praktik mengajar</h2></div><p>Artefak pembelajaran, bukti praktik, kegiatan nonmengajar, dan instrumen penilaian yang dianalisis secara kritis.</p></div>
+        <div id="lk3Intro" class="intro-panel"></div>
+        <div id="lk3Grid" class="analysis-grid"></div>
+        <div class="lk3-bottom-grid">
+          <article id="lk3Synthesis" class="synthesis-card"></article>
+          <article id="lk3Assessment" class="synthesis-card"></article>
+        </div>
+        <p class="section-footnote">Kartu berstatus “perlu dilengkapi” menandai bukti yang harus ditambahkan sebelum portofolio dipublikasikan. Buka kartu untuk membaca analisis dan tindak lanjut.</p>
+      </div>
+    </section>
+
+    <!-- UTS: semua bagian utama langsung terlihat di halaman -->
+    <section id="uts" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">03 · E-PORTOFOLIO UTS</div><h2>Praktik mengajar mandiri — Siklus 1</h2></div><p>Perangkat pembelajaran terbaik dari siklus 1, video pelaksanaan, analisis, dan refleksi.</p></div>
+        <div id="utsTabContent" class="portfolio-stack" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- UAS: preview modul siklus 2–4, video, asesmen dan analisis tampil langsung -->
+    <section id="uas" class="section section-tint">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">04 · E-PORTOFOLIO UAS</div><h2>Perkembangan praktik mengajar — Siklus 2–4</h2></div><p>Perangkat dari siklus 2–4, bukti yang mendukung, serta analisis perkembangan kompetensi mengajar.</p></div>
+        <div id="uasTabContent" class="portfolio-stack" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- MEDIA: file dan katalog dikelola di content/media.js -->
+    <section id="media" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">05 · MEDIA PEMBELAJARAN</div><h2>Media untuk mengaktifkan proses belajar</h2></div><p>Game interaktif, presentasi, LKPD, dan bahan ajar yang dapat dibuka atau diunduh.</p></div>
+        <div id="mediaGrid" class="media-grid"></div>
+      </div>
+    </section>
+
+    <!-- NONMENGAJAR: bukti autentik ditambahkan saat tersedia -->
+    <section id="nonmengajar" class="section section-tint">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">06 · KEGIATAN NONMENGAJAR</div><h2>Belajar dari kontribusi di luar kelas</h2></div><p>Dokumentasi kegiatan, peran, hasil, tantangan, dan hal yang dipelajari.</p></div>
+        <div id="nonmengajarIntro" class="intro-panel"></div>
+        <div id="nonmengajarGrid" class="activity-grid"></div>
+        <div id="nonmengajarChallenge" class="reflection-callout"></div>
+</div>
+    </section>
+
+    <!-- ASESMEN -->
+    <section id="asesmen" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">07 · INSTRUMEN PENILAIAN</div><h2>Menilai untuk memperbaiki pembelajaran</h2></div><p>Instrumen, rubrik, bukti hasil belajar, interpretasi, dan keputusan tindak lanjut.</p></div>
+        <div id="assessmentIntro" class="intro-panel"></div>
+        <div id="assessmentGrid" class="assessment-grid"></div>
+        <div id="assessmentFiles" class="file-grid"></div>
+        <div id="assessmentReminder" class="warning-note"></div>
+      </div>
+    </section>
+
+    <!-- REFLEKSI: tiga bagian terpisah -->
+    <section id="refleksi" class="section section-tint">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">08 · REFLEKSI DAN PENGEMBANGAN DIRI</div><h2>Praktik sebagai proses belajar</h2></div><p>Filosofi mengajar, refleksi praktik, dan langkah konkret untuk terus berkembang.</p></div>
+        <div id="philosophyContent" class="philosophy-content"></div>
+        <div class="reflection-section-head"><span class="section-kicker">BAGIAN 2</span><h3>Refleksi praktik mengajar</h3><p id="reflectionIntro"></p></div>
+        <div id="reflectionGrid" class="reflection-grid"></div>
+        <div class="reflection-section-head"><span class="section-kicker">BAGIAN 3</span><h3>Rencana pengembangan diri</h3><p>Prioritas pengembangan diturunkan dari pengalaman dan kebutuhan yang teridentifikasi.</p></div>
+        <div id="developmentGrid" class="development-grid"></div>
+        <div class="reflection-footer-actions"><a id="reflectionDoc" class="btn btn-outline" href="assets/artefak/LK4_Empat_Refleksi_PPL_Mandiri.docx" download>Unduh dokumen refleksi ↗</a><div id="feedbackMini" class="feedback-mini"></div></div>
+      </div>
+    </section>
+
+    <!-- DOKUMEN -->
+    <section id="dokumen" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="section-kicker">09 · PUSAT DOKUMEN</div><h2>Temukan artefak dengan cepat</h2></div><p>Kumpulan modul, refleksi, instrumen, dan media yang dipisahkan dalam folder aset.</p></div>
+        <div class="file-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="documentSearch" type="search" placeholder="Cari modul, media, refleksi…" aria-label="Cari dokumen"></label><span id="documentCount">Dokumen</span></div>
+        <div id="documentsGrid" class="documents-grid"></div><div id="documentsEmpty" class="empty-state" hidden>Belum ada dokumen yang cocok.</div>
+</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-modern">
+      <a class="footer-logo" href="#beranda" aria-label="Kembali ke beranda">
+        <img src="assets/logo.png" alt="Logo E-Portofolio Adri Faisal" loading="lazy">
+      </a>
+      <p class="footer-title">E portofolio - adri faisal 2026</p>
+      <a class="footer-top-link" href="#beranda">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <dialog id="detailModal" class="detail-modal" aria-labelledby="modalTitle">
+    <div class="modal-head"><div><span class="section-kicker">DETAIL ARTEFAK</span><h2 id="modalTitle">Detail artefak</h2></div><button type="button" class="modal-close" id="modalClose" aria-label="Tutup detail">×</button></div>
+    <div id="modalBody" class="modal-body"></div>
+  </dialog>
+  <button id="backTop" class="back-top" aria-label="Kembali ke atas">↑</button>
+
+  <!-- Konten dipisah per file agar mudah diperbarui. -->
+  <script src="content/beranda.js"></script>
+  <script src="content/profil.js"></script>
+  <script src="content/produk_pembelajaran.js"></script>
+  <script src="content/lk3.js"></script>
+  <script src="content/uts.js"></script>
+  <script src="content/uas.js"></script>
+  <script src="content/video.js"></script>
+  <script src="content/media.js"></script>
+  <script src="content/refleksi.js"></script>
+  <script src="content/filosofi.js"></script>
+  <script src="content/rencana_pengembangan.js"></script>
+  <script src="content/nonmengajar.js"></script>
+  <script src="content/asesmen.js"></script>
+  <script src="content/umpanbalik.js"></script>
+  <script src="content/dokumen.js"></script>
+  <script src="content/overrides.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
